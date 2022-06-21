@@ -78,7 +78,7 @@ describe('Requisito 7: Teste do PokemonDetails.js', () => {
 
     expect(favoriteCheckbox).toBeChecked();
 
-    const favoriteSvg = screen.queryByRole('img', {
+    const favoriteSvg = screen.getByRole('img', {
       name: /pikachu is marked as favorite/i,
     });
     expect(favoriteSvg).toBeInTheDocument();
